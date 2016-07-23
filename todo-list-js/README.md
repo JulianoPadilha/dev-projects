@@ -1,6 +1,6 @@
-# Todo list JS
+# Todo list made with JavaScript
 
-## Item para estudar
+## Itens para estudar
 >Escrever um post sobre cada um deles.
 
 - [ ] localStorage
