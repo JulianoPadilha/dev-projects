@@ -3,16 +3,21 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-	<title>Todo list made with JS</title>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<title>To Do List</title>
 </head>
 <body>
-	<input type="text" name="task" id="task">
-	<button id="add">Add</button>
+	<div class="header">
+		<input type="text" name="task" id="task">
+		<button id="add">Add</button>
+	</div>
 	<hr>
 
 	<div id="msg"></div>
-	<div id="todos"></div>
+	<div id="tasks" class="tasks"></div>
 
-	<script type="text/javascript" src="todo.js"></script>
+	<script src="todo.js"></script>
 </body>
 </html>

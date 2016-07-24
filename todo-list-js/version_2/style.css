@@ -1,0 +1,64 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: "Courier New", Courier, monospace;
+	background-color: #F3F3F3;
+	width: 100%;
+	height: 100%;
+}
+
+.header {
+	width: 470px;
+	height: 50px;
+	margin: 0 auto;
+	position: relative;
+	top: 8px;
+}
+
+.header input {
+	width: 400px;
+	height: 30px;
+	border: none;
+}
+
+.header input[type="text"] {
+	font-size: 14px;
+}
+
+.header input:focus {
+	outline-color: #99D04E;
+}
+
+.header button {
+	width: 50px;
+	height: 34px;
+	background-color: #99D04E;
+	border: none;
+	font-size: 14px;
+	font-weight: lighter;
+}
+
+hr {
+	border: none;
+	background-color: #00BBC7;
+	color: #00BBC7;
+	height: 1px;
+}
+
+
+@media (max-width: 375px) {
+	.header {
+		width: 260px;
+		margin: 0 auto;
+	}
+
+	.header input {
+		width: 200px;
+		height: 30px;
+		border: none;
+	}
+}
+

@@ -34,7 +34,7 @@ var showTasks = function(){
 
 	html += '</ul>'; // Fechamos a concatenação.
 
-	document.getElementById('todos').innerHTML = html; // Inserimos o conteúdo da variável 'html' dentro da 'div' que contém o id 'todos'. O innerHTML serve justamente para inserir novos conteúdos.
+	document.getElementById('tasks').innerHTML = html; // Inserimos o conteúdo da variável 'html' dentro da 'div' que contém o id 'todos'. O innerHTML serve justamente para inserir novos conteúdos.
 
 	var buttons = document.getElementsByClassName('remove'); // Pegamos todos os elementos do DOM que possuem a class 'remove' e armazenamos na variável 'buttons'.
 
