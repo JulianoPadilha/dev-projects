@@ -3,9 +3,13 @@ var addTask = function(){
 
 	var tasks = getTasks(); // Chamamos em uma variável a função 'getTasks' que cria um array que traz todas as tasks salvas antes de inserir uma nova.
 
-	tasks.push(task); // Utilizamos o push para jogar o elemento armazenado na variável 'task' para nosso Array.
+	if(task){ // Verifica se há alguma task preenchida dentro do input
+		tasks.push(task); // Utilizamos o push para jogar o elemento armazenado na variável 'task' para nosso Array.
 
-	localStorage.setItem('tasks', JSON.stringify(tasks)); // Utilizamos o localStorage para "persistir" as informações no storage do browser. Com parâmetro passamos a chave e o valor, usando 'JSON.stringify' para transformar o valor em ums string.
+		localStorage.setItem('tasks', JSON.stringify(tasks)); // Utilizamos o localStorage para "persistir" as informações no storage do browser. Com parâmetro passamos a chave e o valor, usando 'JSON.stringify' para transformar o valor em ums string.
+
+		document.getElementById('task').value = ''; // Retorna para vazio o input após um item ser inserido.
+	}
 
 	// showTasks(); // Chamamos a função showTasks() para ela mostrar na tela o novo elemento adicionado logo após o mesmo ser inserido. Sem ela, teríamos que atualizar o navegador para ver a mudança na tela. 
 
