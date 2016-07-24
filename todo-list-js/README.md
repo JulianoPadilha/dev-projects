@@ -7,3 +7,9 @@
 - [ ] JSON.parse
 - [ ] JSON.stringify
 - [ ] addEventListener
+- [ ] document
+- [ ] window
+- [ ] location
+- [ ] getElement | Todas as variantes
+- [ ] getAttribute
+- [ ] split
