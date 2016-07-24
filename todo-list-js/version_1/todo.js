@@ -24,7 +24,7 @@ function getTodos(){
 // Adding a new TODO entry
 
 // The second function we might want to take a look at is the one called add which is called 
-// when the user has clicked on the All button. At first, using getElementById it locates the 
+// when the user has clicked on the Add button. At first, using getElementById it locates the 
 // HTML element with the id task which is the input box and then it retrieves the value the 
 // user has typed in.
 
