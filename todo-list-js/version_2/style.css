@@ -48,7 +48,36 @@ hr {
 	height: 1px;
 }
 
+h2 {
+	width: 350px;
+	margin: 0 auto;
+	padding: 10px 0 20px 0;
+}
 
+.remove {
+	background-color: #F46560;
+	border: none;
+	box-shadow: none;
+	width: 60px;
+	height: 20px;
+	margin: 0 0 0 10px;
+	border-radius: 25px;
+	cursor: pointer;
+}
+
+.tasks {
+	width: 100%;
+}
+
+ul li {
+	list-style: none;
+	margin: 20px 200px 0px 50px;
+
+}
+
+
+
+/*Media Queries*/
 @media (max-width: 375px) {
 	.header {
 		width: 260px;

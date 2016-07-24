@@ -33,7 +33,7 @@ var showTasks = function(){
 	var html = '<ul>'; // Criamos uma variável 'html' que irá concatenando a nossa estrutura HTML.
 
 	tasks.forEach(function(elemento, index){ // Criamos um forEach para iterar todos os elementos do nosso Array. Utilizamos 'tasks' na frente para referenciar de qual lugar estamos trazendo os elementos. 
-		html += '<li>' + elemento + '<button class="remove" id="'+ index +'">X</button></li>'; // Novamente utilizamos a variável 'html' para concatenar nosso HTML passando o 'elemento' que referencia os itens pertencentes as tasks. 'index' representa nosso index dentro do array.
+		html += '<li> 📌 ' + elemento + '<button class="remove" id="'+ index +'">Remover</button></li>'; // Novamente utilizamos a variável 'html' para concatenar nosso HTML passando o 'elemento' que referencia os itens pertencentes as tasks. 'index' representa nosso index dentro do array.
 	});
 
 	html += '</ul>'; // Fechamos a concatenação.
