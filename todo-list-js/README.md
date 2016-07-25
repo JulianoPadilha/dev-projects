@@ -3,7 +3,7 @@
 ## Itens para estudar
 >Escrever sobre cada um deles.
 
-- [ ] Web Storage
+- [X] Web Storage
 - [ ] JSON.parse
 - [ ] JSON.stringify
 - [ ] addEventListener

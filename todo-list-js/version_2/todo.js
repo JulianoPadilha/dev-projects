@@ -6,14 +6,14 @@ var addTask = function(){
 	if(task){ // Verifica se há alguma task preenchida dentro do input
 		tasks.push(task); // Utilizamos o push para jogar o elemento armazenado na variável 'task' para nosso Array.
 
-		localStorage.setItem('tasks', JSON.stringify(tasks)); // Utilizamos o localStorage para "persistir" as informações no storage do browser. Com parâmetro passamos a chave e o valor, usando 'JSON.stringify' para transformar o valor em ums string.
+		localStorage.setItem('tasks', JSON.stringify(tasks)); // Utilizamos o localStorage.setItem para "persistir" as informações no storage do browser. Com parâmetro passamos a chave e o valor, usando 'JSON.stringify' para transformar o valor em uma string.
 
 		document.getElementById('task').value = ''; // Retorna para vazio o input após um item ser inserido.
 	}
 
 	// showTasks(); // Chamamos a função showTasks() para ela mostrar na tela o novo elemento adicionado logo após o mesmo ser inserido. Sem ela, teríamos que atualizar o navegador para ver a mudança na tela. 
 
-	document.location.reload(true); // Utilizamos o reload(true) para após a função ser realizada atualizar a a tela. Sendo assim, a função chamada acima pode ser retirada. 
+	document.location.reload(true); // Utilizamos o reload(true) para após a função ser realizada atualizar a tela. Sendo assim, a função chamada acima pode ser retirada. 
 
 }
 
@@ -42,19 +42,19 @@ var showTasks = function(){
 
 	var buttons = document.getElementsByClassName('remove'); // Pegamos todos os elementos do DOM que possuem a class 'remove' e armazenamos na variável 'buttons'.
 
-	for (var i=0; i < buttons.length; i++){ // Iteramos nossa variável nossos elementos e adicionamos para cada elemento com a class 'remove' o addEventListener conectado com o evento 'click' e o callback da função 'removeTask'.
+	for (var i=0; i < buttons.length; i++){ // Iteramos nossos elementos e adicionamos para cada elemento com a class 'remove' o addEventListener conectado com o evento 'click' e o callback da função 'removeTask'.
 		buttons[i].addEventListener('click', removeTask);
 	};
 }
 
 var removeTask = function(){
-	var id = this.getAttribute('id'); // Criamos uma variável id para receber o atual objeto-DOM referente ao botão remover que o usuário clicar. O this representa o objeto-DOM atual.
+	var id = this.getAttribute('id'); // Criamos uma variável id para receber o atual objeto-DOM referente ao id do botão remover que o usuário clicar. O this representa o objeto-DOM atual.
 
 	var tasks = getTasks(); // Guardamos em uma variável chamada 'tasks' todos as tasks que temos armazenadas utilizando a função getTasks;
 
 	tasks.splice(id, 1); // Utilizamos o método splice para remover um elemento específico. Como parâmetro passamos o id referente ao elemento que será removido do array e o valor "1", que representa que estamos realizando apenas uma remoção.
 
-	localStorage.setItem('tasks', JSON.stringify(tasks)); // Após o elemento ser removido, utilizamos novamente o serItem para salvar a nossa nova lista de array.
+	localStorage.setItem('tasks', JSON.stringify(tasks)); // Após o elemento ser removido, utilizamos novamente o setItem para salvar a nossa nova lista de array.
 
 
 	// showTasks(); // Chamamos a função showTasks() para ela mostrar na tela a nossa lista de tasks atualizada logo após um item ter sido removido. Sem ela, teríamos que atualizar o navegador para ver a mudança na tela. 
