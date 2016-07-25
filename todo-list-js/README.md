@@ -1,9 +1,9 @@
 # Todo list made with JavaScript
 
 ## Itens para estudar
->Escrever um post sobre cada um deles.
+>Escrever sobre cada um deles.
 
-- [ ] localStorage
+- [ ] Web Storage
 - [ ] JSON.parse
 - [ ] JSON.stringify
 - [ ] addEventListener
