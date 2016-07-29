@@ -4,12 +4,8 @@
 >Escrever sobre cada um deles.
 
 - [X] Web Storage
+- [X] DOM
 - [ ] JSON.parse
 - [ ] JSON.stringify
-- [ ] addEventListener
-- [ ] document
-- [ ] window
-- [ ] location
-- [ ] getElement | Todas as variantes
-- [ ] getAttribute
-- [ ] split
+
+
