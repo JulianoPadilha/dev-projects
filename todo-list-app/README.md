@@ -1,1 +1,1 @@
-<center>![](screenshot.png)</center>
+<p align="center">![](screenshot.png)</p>
