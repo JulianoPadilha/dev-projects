@@ -4,8 +4,12 @@ var completeSVG = '<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:x
 document.getElementById('add').addEventListener('click', function(){
 	var value = document.getElementById('item').value;
 
+	var tasks = [];
+
 	if(value){
-		addItemTodo(value);
+		// addItemTodo(value);
+		tasks.push(value);
+		localStorage.setItem('tasks', JSON.stringify(tasks));
 		document.getElementById('item').value = '';
 	} else {
 		alert("Please, write something!");
@@ -31,7 +35,8 @@ var completeItem = function(){
 }
 
 var addItemTodo = function(text){
-	var list = document.getElementById('todo');
+	// var list = document.getElementById('todo');
+	var list = localStorage.getItem('tasks');
 
 	var item = document.createElement('li');
 	item.innerText = text;

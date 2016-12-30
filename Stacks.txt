@@ -1,0 +1,16 @@
+STACKS
+
+HTML
+CSS
+Javascript
+	AngularJS
+
+NodeJS
+
+Firebase
+
+**Futuramente**
+MongoDB
+Ionic
+React
+

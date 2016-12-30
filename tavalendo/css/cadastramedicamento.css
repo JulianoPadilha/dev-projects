@@ -1,0 +1,55 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #fff;
+	font-family: Helvetica, sans-serif;
+}
+
+.formCadastraMedicamento {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	margin-top: 50px;
+}
+
+h1 {
+	text-align: center;
+	margin-top: 50px;
+	font-weight: lighter;
+}
+
+.formCadastraMedicamento input {
+	display: flex-inline;
+	border: none;
+	padding: 20px 20px 5px 0;
+	width: 270px;
+	border-bottom: 1px solid #E8EBF0;
+	font-size: 13px;
+	margin: 10px 60px;
+	/*margin-bottom: 20px;*/
+}
+
+.formCadastraMedicamento input[type="text"], input[type="password"] {
+	padding-left: 10px;
+	color: #8492AD;
+}
+
+.formCadastraMedicamento button {
+	margin-top: 70px;
+	margin: 0 auto;
+	display: flex;
+	/*justify-content: center;*/
+	/*align-items: center;*/	
+	/*width: 10%;*/
+	padding: 10px 40px;
+	border-radius: 100px;
+	border: none;
+	font-size: 13px;
+	font-weight: bold;
+	background-color: #27E5C0;
+	color: #fff;
+	cursor: pointer;
+}

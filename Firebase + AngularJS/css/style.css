@@ -1,0 +1,48 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: arial, sans-serif; 
+}
+
+.container {
+	width: 100%;
+	background-color: red;
+	height: 100px;
+	display: flex;
+}
+
+.section {
+	display: block;
+	margin: 0 auto;
+}
+
+.section h2 {
+	text-align: center;
+	padding: 20px;
+	color: #fff;
+}
+
+.section input {
+	width: 500px;
+	height: 50px;
+	border-top: none;
+	border-bottom: 1px solid grey;
+	border-right: none;
+	border-left: none;
+
+}
+
+.section input[type=text] {
+	font-size: 14px;
+}
+
+.section button {
+	display: block;
+	padding: 10px 30px;
+	margin: 0 auto;
+	margin-top: 10px;
+	font-size: 20px;
+}

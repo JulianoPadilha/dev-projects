@@ -1,0 +1,138 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #27E5C0;
+	font-family: Helvetica, sans-serif;
+} 
+
+.container {
+	width: 60%;
+	height: 500px;
+	background-color: #F6F7FA;
+	display: flex;
+	margin: 0 auto;
+	margin-top: 6.25%;
+	flex-wrap: wrap;
+
+}
+
+.formHeader {
+	display: flex;
+	width: 100%;
+	height: 20%;
+	background-color: #337C73;
+	color: #F6F7FA;
+	justify-content: space-between;
+}
+
+.formHeader img {
+	margin: auto 20px;
+	max-width: 100%;
+	height: auto;
+}
+
+.formHeader img:hover {
+	opacity: 0.9;
+}
+
+.formHeaderLogin {
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	background-color: #337C73;
+	border-bottom: 5px solid #4ECF69;
+	height: 95px;
+	width: 100px;
+}
+
+.formHeaderLogin:hover {
+	background-color: #4ECF69;
+}
+
+.formHeaderLogin p {
+	margin-bottom: 33%;	
+	color: #F6F7FA;
+}
+
+.formLogin {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+
+.formLogin input {
+	display: flex;
+	border: none;
+	padding: 40px 20px 5px 0;
+	background-color: #F6F7FA;
+	width: 270px;
+	border-bottom: 1px solid #E8EBF0;
+	font-size: 13px;
+
+}
+
+.formLogin input[type="text"], input[type="password"] {
+	padding-left: 10px;
+	color: #8492AD;
+}
+
+.formLogin button {
+	margin-top: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	padding: 10px;
+	border-radius: 100px;
+	border: none;
+	font-size: 13px;
+	font-weight: bold;
+	background-color: #27E5C0;
+	color: #fff;
+	cursor: pointer;
+	
+}
+
+.container h1 {
+	display: inline-flex;
+	justify-content: center;
+	width: 100%;
+	font-weight: lighter;
+}
+
+@media (max-width: 500px) {
+	.formHeader img {
+		width: 130px;
+		height: auto;
+	}
+
+	.formLogin button {
+		max-width: 200px;
+		margin: auto;
+		margin-top: 50px;
+	}
+
+	.formLogin input {
+		max-width: 200px;
+	}
+}
+
+@media (max-width: 375px) {
+	.formLogin input {
+		max-width: 170px;
+	}
+}
+
+@media (max-width: 320px) {
+	.formLogin input {
+		max-width: 150px;
+	}
+
+	.formHeader img {
+		width: 100px;
+		height: auto;
+	}
+}

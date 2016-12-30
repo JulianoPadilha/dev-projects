@@ -1,0 +1,84 @@
+body 
+	background:
+		color: #eee
+	font:
+		family: 'Fira Sans', sans-serif
+	-webkit-font-smoothing: antialiased
+	-webkit-text-size-adjust: 100%
+
+.home-wrap
+	display: flex
+	min-height: 100vh
+
+	@media (max-width: 775px)
+		display: block
+
+.home-sections
+	flex: 1
+
+	section
+		padding: 50px 0
+
+	// Flex Classes
+
+	.flex
+		display: flex
+		flex-direction: rows
+
+	.flex--center
+		justify-content: center
+
+	.flex--space-around
+		justify-content: space-around
+
+	.order-first
+		order: -1
+
+
+// Columns
+
+.col-1
+	width: 320px
+	margin: 0px 0px
+	box-sizing: border-box
+
+.col-2
+	max-width: 640px
+	width: 100%
+	margin: 0 10px
+	box-sizing: border-box
+
+.col-50
+	width: 100%
+
+.push-right
+	margin-left: 330px
+
+@media (max-width: 640px)
+	.home-sections .flex
+		display: block
+
+	.col-1
+		width: 100%
+
+	.col-50
+		width: auto
+
+	.push-right
+		margin-left: 10px
+
+// Typography
+
+.home-lead
+	font-size: 36px
+	line-height: 1.1
+
+	&.outdented
+		text-indent: -0.75em
+
+@media (max-width: 640px)
+	.home-lead
+		text-align: center
+
+		&.outdented
+			text-indent: 0
